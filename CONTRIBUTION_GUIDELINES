@@ -1,0 +1,54 @@
+CV Project Contribution Guidelines
+
+Thank you for considering contributing to the CV project! 
+We appreciate your interest in making this project better. 
+To ensure a smooth and productive collaboration, please follow these guidelines when contributing.
+
+Code of Conduct
+Please review and adhere to our Code of Conduct to foster a welcoming and inclusive community.
+
+How to Contribute?
+  
+1) Fork the repository to your GitHub account.
+    Clone the forked repository to your local machine.
+    Create a new branch for your changes: git checkout -b your-feature.
+    Make your changes and commit them: git commit -m "Description of your changes".
+    Push the changes to your forked repository: git push origin your-feature.
+    Create a pull request from your branch to the main branch of this repository.
+    Ensure the pull request includes a clear description of your changes and the reason behind them.
+    Branching Strategy
+
+2) The main branch represents the stable version of the project.
+    Please submit your pull requests against the main branch.
+    Use feature branches to work on your changes.
+    Coding Standards
+3) Follow the PEP 8 coding style guidelines.
+    Ensure your code is well-documented and includes explanatory comments where necessary.
+    Write meaningful variable and function names.
+    Testing Guidelines
+    Include relevant test cases with your changes.
+    Ensure all tests pass before submitting the pull request.
+    Documentation
+4) Include documentation for new features or changes to existing functionality.
+    Update the project's README or other relevant documentation as needed.
+
+5) Issue Tracking
+    If you find a bug or have a feature request, check the issue tracker first to avoid duplicate submissions.
+      Use descriptive titles and provide detailed information in issue reports.
+      Submitting Pull Requests
+6) Provide a clear and descriptive pull request description.
+    Make sure your code has been reviewed and meets our coding standards.
+    Review Process
+    Pull requests will be reviewed by project maintainers.
+    Feedback will be provided, and changes may be requested before merging.
+    Acknowledgments
+  
+We are grateful for your contributions! 
+  Your efforts help improve the CV project and benefit the community.
+  We will acknowledge your contributions in the project's documentation.
+
+License
+By contributing to this project, you agree that your contributions will be licensed under the LICENSE of this project.
+If you have any questions or need further assistance, feel free to reach out to us through "kompasj@mail.ru".
+
+Happy contributing!
