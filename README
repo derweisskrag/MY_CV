@@ -1,0 +1,83 @@
+The project is used to create my CV using Python's library called reportlab. 
+    This library is used to create PDF documents; its drawback is that other
+    libraries such as Streamlit and Django provide more functionality to build
+    physical-appealing designs, while Reportlab is not for this purpose, but to 
+    create more formal documents. 
+
+CV stands for Curriculum Vitae (Description of Life) and it follows a strict format,
+which you cannot neglect:
+  1) Personal Information (You do not include your wife, children, etc.)
+       because a potential employer is more interested in you as a good contributor to 
+       their company. Therefore, you specify all the necessary information: 
+        Name, Surname, Birthdate, Contact details, social media, self-description;
+  2) Education: here you are supposed to demonstrate where you studied and what education
+       the degrees you have acquired throughout your life;
+  3) Working Experience: this section includes your professional life. This is the most valuable
+       section to your employer, as it shows you are worked in the industry where you apply for
+       a position;
+  4) Communicative Skills: Here you demonstrate your communicative abilities. It is incredibly helpful
+       to include all formal data which can be confirmed;
+  5) Technical knowledge: 
+       Programming skills, your knowledge of computers (MS Office programs);
+  6) Hobbies and your personality: this section is responsible to show what activities you engage
+       with when you do not work; also, it demonstrates what strong and weak sides you have, which can
+       significantly help your potential employer to recognize you;
+  7) Additional information: this belongs to all the information that does not fit the CV format; 
+       for example, you can narrate about your proficiency and professional life; also, you can express
+       your willingness to work and describe your activity which enhances your qualification. 
+
+That is how a CV is built. 
+
+Project organization:
+  The CV.py file is the first implementation of my CV using Python. 
+  The main.py is the file which is the entry point of my project to run the whole application.
+    Here is what it consists of:
+      1. resume.py: this module is responsible for creating a CV document.
+         It imports all the necessary modules and creates the functionality. 
+      2. abstract.py: this module is the definition of my abstract class CV to 
+         be extended in resume.py and implement its methods in it.
+      3. iterators/iterators.py: this module provides a custom iterator to ensure
+         lazy traversal process to achieve optimization whenever necessary.
+         --TODO: I will implement an abstract class there too to create specific
+                 instances of those iterators: for a dictionary, for a list, and for any other needed 
+                 data structure.
+      4. utils/Utils.py: this module is responsible for the text formatting process when used. It was
+         used in the Resume class (resume.py) to ensure correct descriptions of languages. 
+      5. lib/data.py: this module simply contains the dictionary of all required data. This is quite
+         necessary to organize my project this way because I must ensure other data formats to build 
+         CV. Therefore, 
+         --TODO: create @classmethod called "instantiate_from_csv"; create other @classmethods to 
+                 simulate instantiation from various data structures such as Pandas, SQL, Mongoose and etc.
+      --TODO: As I learn Asyncio, Flask, PyTorch, Pandas, SciPy, Daemonize, and Python's functional and class decorators,
+              I will patch this project with the required changes to make it more abstract and modular.
+      --DRAWBACK: resume.py is too large a file, so more abstraction is needed. I am happy that I can understand it!
+
+INSTALLATION: 
+  Clone my project: git clone https://github.com/derweisskrag/MY_CV.git
+  You have to go to lib/data.py and edit the dictionary to include your necessary data. Then, you have to go to
+    the main.py module and include this data and specify the file name that you want to be your CV: my_cv = Resume(data, "my_cv.pdf").
+    You have to change this to your data: my_cv = Resume(your_data, "your_cv.pdf"). 
+    Basically, that is it! You can now run python.exe main.py and see if it runs without errors. 
+  Common errors: 1) KeyWord, 2) AttributeError. Hence, you have to be careful with names.
+  Libraries: 1) pyphen, and 2) reportlab
+  Installation: python.exe -m pip install pyphen reporlab 
+    Links to read documentation:
+      Pyphen: https://pypi.org/project/pyphen/,
+      Reportlab: https://pypi.org/project/reportlab/
+    Possible problems: 
+      permission: --user
+      already satisfied: no need to install it
+      example: try to 'python.exe -m pip install smtplib'; 
+               it is internal built-in Python's library, so you do not have to install it.
+
+USAGE:
+  Throughout my project, you can find many comments and documentation, so that is gonna be easy for you to follow.
+  generate_section_recursive is a good and powerful method to use there, as it help you build a quick layout following
+  React.js logic. 
+
+TODO_LIST:
+  1) More abstraction in both iterators/iterators.py and resume.py;
+  2) Daemonize to ensure automation for testing my app;
+  3) Decorators to introduce more modular code.
+
+
